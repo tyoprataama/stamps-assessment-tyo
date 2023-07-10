@@ -10,8 +10,7 @@ function formatDate(timestamp) {
     day: '2-digit',
     month: 'short',
   };
-const formattedDate = date.toLocaleDateString('en-GB', options);
-return formattedDate;
+return date.toLocaleDateString('en-GB', options);
 }
 
 async function getWeatherForecast() {
