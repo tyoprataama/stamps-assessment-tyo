@@ -9,9 +9,9 @@ function formatDate(timestamp) {
     weekday: 'short',
     day: '2-digit',
     month: 'short',
-    year: 'numeric'
   };
-  return date.toLocaleDateString('en-US', options);
+const formattedDate = date.toLocaleDateString('en-GB', options);
+return formattedDate;
 }
 
 async function getWeatherForecast() {
